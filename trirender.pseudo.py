@@ -2,6 +2,7 @@ fn triRender(p1:array, p2:array, p3:array){
 
   # all verticies translated to 2D, so each array has a length of y2-y1
   # assuming a setPixel() function preset in the programming language (even 8086 assembly has one)
+  # file uses python file extension for correct code coloring in most editors
 
   fn lineEQ(x1, y1, x2, y2){
     m = (y2 - y1) / (x2 - x1)
