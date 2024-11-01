@@ -34,5 +34,4 @@ p3 = (200, 300)
 while True:
     screen.fill((0, 0, 0))
     triRender(p1, p2, p3)
-
     pygame.display.flip()
