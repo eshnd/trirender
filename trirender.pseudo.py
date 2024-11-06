@@ -32,8 +32,8 @@ fn triRender(p1:array, p2:array, p3:array, COLOR:string, FILL:bool){
     }
   }
   fn fill(){
-    xs.remove(p1[0],p2[0],p3[0])
-    ys.remove(p1[1],p2[1],p3[1])
+    xs = [x for x in xs if x not in {p1[0], p2[0], p3[0]}]
+    ys = [y for y in ys if y not in {p1[1], p2[1], p3[1]}]
     for (int i = 0; i < len(xs); i++){
       xv = xs[i]
       yv1 = ys[i]
